@@ -1,3 +1,5 @@
+"use strict";
+
 const render = () => {
     const one = document.querySelector('.one');
     const two = document.querySelector('.two');
@@ -29,7 +31,6 @@ const render = () => {
         const yearDate = Date.parse('01 january 2022');
         const dateNow = Date.now();
         return Math.round((yearDate - dateNow) / 1000 / 60 / 60 / 24);
-
     }
 
     one.innerText = dayTimeFunc(dayTime);
