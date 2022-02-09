@@ -28,7 +28,7 @@ const render = () => {
     }
 
     const newYear = () => {
-        const yearDate = Date.parse('01 january 2022');
+        const yearDate = Date.parse('01 january 2023');
         const dateNow = Date.now();
         return Math.round((yearDate - dateNow) / 1000 / 60 / 60 / 24);
     }
